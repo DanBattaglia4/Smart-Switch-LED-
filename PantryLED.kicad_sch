@@ -1049,6 +1049,9 @@
     (uuid feafb5a4-eaeb-4069-a7f3-f7231694f89a)
   )
 
+  (no_connect (at 109.22 67.31) (uuid 6457cfdc-e4ca-4cef-9815-1f4df8620e81))
+  (no_connect (at 109.22 55.88) (uuid 97dae8e3-c301-47bb-adbd-d8a5c9e74db5))
+
   (wire (pts (xy 166.37 107.95) (xy 189.23 107.95))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 0b825e56-3942-407d-b11d-bab9ef43b5a5)
@@ -1278,6 +1281,15 @@
     (uuid ff2992e5-86ce-4c22-97dd-6dcb967ba3fd)
   )
 
+  (text "RST pullup " (at 102.87 88.9 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 34fb7c68-11f7-4805-abbb-1258279a0fb1)
+  )
+  (text "2024/09/02: Replaced buck converter with same family but with 3.3V output\nshort R3 and remove R4"
+    (at 36.83 26.67 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 70cd36c5-0ad2-40df-abba-cd8ea650fe41)
+  )
   (text "12V Rail\nGND_12\nLiDAR Input\nSBWTCK\nSBWTDIO\n3.3V Rail\nGND\n"
     (at 196.85 110.49 0)
     (effects (font (size 1.5 1.5)) (justify left bottom))
@@ -1366,7 +1378,7 @@
     (property "Reference" "R2" (id 0) (at 111.76 91.4399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (id 1) (at 111.76 93.9799 0)
+    (property "Value" "47k" (id 1) (at 111.76 93.9799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 107.442 92.71 90)
@@ -1970,7 +1982,7 @@
       (reference "R1") (unit 1) (value "1k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/1f4347b8-2b82-4f0b-b355-55697015b9aa"
-      (reference "R2") (unit 1) (value "1k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R2") (unit 1) (value "47k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/f48e6cca-db2b-49b1-a586-40b405680efb"
       (reference "R3") (unit 1) (value "2k(150)") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
